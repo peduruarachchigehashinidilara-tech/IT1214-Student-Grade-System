@@ -1,44 +1,25 @@
+package src;
+
+import java.util.ArrayList;
+
 public class Student {
-    // Private variables (Encapsulation)
-    private String studentId;
-    private String studentName;
-    private double marks;
+    private String studentID;
+    private String name;
+    private ArrayList<Double> marks;
 
-    // Constructor
-    public Student(String studentId, String studentName, double marks) {
-        this.studentId = studentId;
-        this.studentName = studentName;
-        this.marks = marks;
+    public Student(String studentID, String name) {
+        this.studentID = studentID;
+        this.name = name;
+        this.marks = new ArrayList<>();
     }
 
-    // Getters and Setters
-    public String getStudentId() {
-        return studentId;
+    public void addMark(double mark) {
+        if (mark >= 0 && mark <= 100) {
+            marks.add(mark);
+        }
     }
 
-    public void setStudentId(String studentId) {
-        this.studentId = studentId;
-    }
-
-    public String getStudentName() {
-        return studentName;
-    }
-
-    public void setStudentName(String studentName) {
-        this.studentName = studentName;
-    }
-
-    public double getMarks() {
-        return marks;
-    }
-
-    public void setMarks(double marks) {
-        this.marks = marks;
-    }
-
-    // Display student details
-    public void displayStudentDetails() {
-        System.out.printf("| %-12s | %-20s | %-6.2f |\n", studentId, studentName, marks);
-		
-    }
+    public String getStudentID() { return studentID; }
+    public String getName() { return name; }
+    public ArrayList<Double> getMarks() { return marks; }
 }
