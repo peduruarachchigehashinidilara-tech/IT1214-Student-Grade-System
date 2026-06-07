@@ -85,6 +85,7 @@ public class Main {
             student.displayStudentDetails();
         }
         System.out.println("-------------------------------------------------");
+		
     }
 
     // 3. Search student by ID
