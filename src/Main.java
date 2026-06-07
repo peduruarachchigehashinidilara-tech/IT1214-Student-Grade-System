@@ -63,7 +63,7 @@ public class Main {
             scanner.next();
         }
         double marks = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline
+        scanner.nextLine(); 
 
         // Creating Student Object and adding to List
         Student newStudent = new Student(id, name, marks);
