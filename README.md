@@ -28,6 +28,7 @@ The system provides a user-friendly menu-driven interface to perform the followi
 ### Prerequisites
 * Ensure you have the *Java Development Kit (JDK)* installed on your machine.
 * Ensure *Git* is installed if you wish to clone or track version history.
+---
 
 ### Steps to Execute
 1. *Clone the Repository:*
