@@ -39,5 +39,6 @@ public class Student {
     // Display student details
     public void displayStudentDetails() {
         System.out.printf("| %-12s | %-20s | %-6.2f |\n", studentId, studentName, marks);
+		
     }
 }
